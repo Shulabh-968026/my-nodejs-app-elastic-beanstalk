@@ -8,6 +8,10 @@ app.get('/',(req,res)=>{
     res.send('Hello from Elastic Beanstalk!')
 })
 
+app.get('/about',(req,res)=>{
+    res.send('This is about page')
+})
+
 app.use("*",(req,res)=>{
     res.status(404).send('Page not found')
 })
